@@ -1,7 +1,7 @@
 package com.animeline;
-
+import android.os.Bundle; // here
 import com.facebook.react.ReactActivity;
-
+import org.devio.rn.splashscreen.SplashScreen; // here
 public class MainActivity extends ReactActivity {
 
   /**
@@ -11,5 +11,12 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "Animeline";
+  }
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    SplashScreen.show(this, R.style.SplashScreenTheme);  // here
+    
+    super.onCreate(savedInstanceState);
   }
 }
