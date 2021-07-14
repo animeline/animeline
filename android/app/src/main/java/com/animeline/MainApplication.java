@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.BV.LinearGradient.LinearGradientPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.horcrux.svg.SvgPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
@@ -31,7 +32,8 @@ public class MainApplication extends Application implements ReactApplication {
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new VectorIconsPackage());          
           
-          new VectorIconsPackage();          
+          new LinearGradientPackage();
+          new VectorIconsPackage();
           
           return packages;
         }
