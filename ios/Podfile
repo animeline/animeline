@@ -15,7 +15,6 @@ target 'Animeline' do
 
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
 
-  pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
   target 'AnimelineTests' do
     inherit! :complete
