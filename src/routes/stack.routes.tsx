@@ -16,13 +16,9 @@ export function StackRoutes() {
     <Navigator screenOptions={{headerShown: false}}>
       <Screen name="Home" component={TabRoutes} />
       <Screen name="Onboarding" component={Onboarding} />
-      <Screen name="Anime" component={Anime} options={{headerShown: true}} />
-      <Screen name="Search" component={Search} options={{headerShown: true}} />
-      <Screen
-        name="Settings"
-        component={Settings}
-        options={{headerShown: true}}
-      />
+      <Screen name="Anime" component={Anime} />
+      <Screen name="Search" component={Search} />
+      <Screen name="Settings" component={Settings} />
     </Navigator>
   );
 }
