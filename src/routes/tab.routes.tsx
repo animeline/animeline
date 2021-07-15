@@ -53,12 +53,16 @@ export function TabRoutes() {
         return {
           tabBarIcon: ({color, size, focused}) => {
             if (route.name === 'Quest') {
+              function handleNavigateToSearchScreen() {
+                navigation.navigate('Search');
+              }
+
               return (
                 <SearchButton
                   name={String(type.outline)}
                   focused={focused}
                   theme={theme}
-                  onPress={() => navigation.navigate('Search')}
+                  onPress={handleNavigateToSearchScreen}
                 />
               );
             }
