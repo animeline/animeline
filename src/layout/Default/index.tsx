@@ -19,7 +19,9 @@ interface DefaultProps {
 
 export function Default({
   children,
-  showHeader = false,
+  header = {
+    hidden: true,
+  },
   statusBar = {
     backgroundColor: colors.primary,
   },
