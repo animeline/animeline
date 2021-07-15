@@ -12,7 +12,7 @@ export function ServiceUnavailable() {
 
   const navigation = useNavigation();
 
-  function handleNavigateToHome() {
+  function handleNavigateToHomeScreen() {
     navigation.navigate('Home');
   }
 
@@ -26,7 +26,7 @@ export function ServiceUnavailable() {
         No momento esta página está indisponível ou não foi criada.
       </Description>
 
-      <Button onPress={handleNavigateToHome}>Voltar ao início</Button>
+      <Button onPress={handleNavigateToHomeScreen}>Voltar ao início</Button>
     </Container>
   );
 }
