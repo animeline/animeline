@@ -1,5 +1,5 @@
 import React, {ReactNode} from 'react';
-import {StatusBar, StatusBarProps} from 'react-native';
+import {ColorValue, StatusBar, StatusBarProps} from 'react-native';
 
 import {colors} from '@config/colors';
 
