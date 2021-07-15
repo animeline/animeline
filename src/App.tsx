@@ -1,12 +1,19 @@
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
+import {ThemeProvider} from 'styled-components';
 
-import {Onboarding} from './components/Onboarding';
+import {colors} from './config/colors';
+
+import {Routes} from './routes';
 
 export function App() {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
 
-  return <Onboarding />;
+  return (
+    <ThemeProvider theme={colors}>
+      <Routes />
+    </ThemeProvider>
+  );
 }
