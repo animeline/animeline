@@ -11,11 +11,15 @@ const sizes = {
 
 const variants = {
   button: {
-    primary: css``,
+    primary: css`
+      background-color: ${props => props.theme.primary};
+    `,
     transparent: css``,
   },
   text: {
-    primary: css``,
+    primary: css`
+      color: ${props => props.theme.white};
+    `,
     transparent: css``,
   },
 };
@@ -31,8 +35,6 @@ export const Container = styled.TouchableOpacity<ButtonProps>`
   justify-content: center;
 
   border-radius: 8px;
-
-  background-color: ${props => props.theme.primary};
 
   ${props =>
     props.disabled &&
@@ -52,5 +54,5 @@ export const Text = styled.Text<TextProps>`
   font-size: 20px;
   font-family: 'Jost Bold';
 
-  color: ${props => props.theme.white};
+  ${props => props.variant && variants.text[props.variant]}
 `;
