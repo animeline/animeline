@@ -1,5 +1,13 @@
+/* eslint-disable react-native/no-inline-styles */
+
 import React, {ReactNode} from 'react';
-import {ColorValue, StatusBar, StatusBarProps} from 'react-native';
+import {
+  ActivityIndicator,
+  ColorValue,
+  StatusBar,
+  StatusBarProps,
+  View,
+} from 'react-native';
 
 import {colors} from '@config/colors';
 
@@ -10,10 +18,11 @@ import {Container, Content} from './styles';
 interface DefaultProps {
   children: ReactNode;
   header?: {
-    type?: 'default' | 'back' | 'input';
+    type?: 'default' | 'back';
     bgColor?: ColorValue;
     hidden?: boolean;
   };
+  loading?: boolean;
   statusBar?: StatusBarProps;
 }
 
@@ -22,6 +31,7 @@ export function Default({
   header = {
     hidden: true,
   },
+  loading = false,
   statusBar = {
     backgroundColor: colors.primary,
   },
@@ -36,7 +46,15 @@ export function Default({
         hidden={header.hidden}
       />
 
-      <Content>{children}</Content>
+      <Content>
+        {loading ? (
+          <View style={{flex: 1, justifyContent: 'center'}}>
+            <ActivityIndicator size={70} color={colors.primary} />
+          </View>
+        ) : (
+          children
+        )}
+      </Content>
     </Container>
   );
 }
