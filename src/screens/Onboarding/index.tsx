@@ -5,9 +5,9 @@ import React, {useRef} from 'react';
 import {Animated, FlatList} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-import {slides} from '../../assets/data/slides';
+import {slides} from '@assets/data/slides';
 
-import {Default} from '../../layout/Default';
+import {Default} from '@layout/Default';
 
 import {Item} from './Item';
 import {Paginator} from './Paginator';

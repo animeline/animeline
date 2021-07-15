@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {ServiceUnavailable} from '../../components/ServiceUnavailable';
+import {ServiceUnavailable} from '@components/ServiceUnavailable';
 
-import {Default} from '../../layout/Default';
+import {Default} from '@layout/Default';
 
 import {Content} from './styles';
 

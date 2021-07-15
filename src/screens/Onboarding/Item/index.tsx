@@ -2,7 +2,7 @@ import React from 'react';
 import {useWindowDimensions} from 'react-native';
 import {SvgProps} from 'react-native-svg';
 
-import {Button} from '../../../components/Button';
+import {Button} from '@components/Button';
 
 import {Container, Title, ImageContainer, Description} from './styles';
 

@@ -3,7 +3,7 @@ import {Text, TouchableOpacity} from 'react-native';
 import {useTheme} from 'styled-components';
 import {useNavigation} from '@react-navigation/native';
 
-import {Default} from '../../layout/Default';
+import {Default} from '@layout/Default';
 
 import {Content} from './styles';
 

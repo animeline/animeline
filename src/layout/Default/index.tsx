@@ -1,9 +1,9 @@
 import React, {ReactNode} from 'react';
 import {StatusBar, StatusBarProps} from 'react-native';
 
-import {colors} from '../../config/colors';
+import {colors} from '@config/colors';
 
-import {Header} from '../../components/Header';
+import {Header} from '@components/Header';
 
 import {Container, Content} from './styles';
 
