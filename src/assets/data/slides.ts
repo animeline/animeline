@@ -1,6 +1,6 @@
 import {Hello} from '../images/svg/hello';
 import {Camping} from '../images/svg/camping';
-import {LovingIt} from '../images/svg/loving_it';
+import {LovingIt} from '../images/svg/loving-it';
 import {Celebration} from '../images/svg/celebration';
 
 export const slides = [
