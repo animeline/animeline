@@ -18,7 +18,7 @@ export function ServiceUnavailable() {
 
   return (
     <Container>
-      <FontAwesome5 name="frown" size={70} color={theme.gray['500']} />
+      <FontAwesome5 name="frown" size={70} color={theme['gray.500']} />
 
       <Title>Whoops!</Title>
 

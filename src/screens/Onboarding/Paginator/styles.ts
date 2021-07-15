@@ -19,5 +19,5 @@ export const Dot = styled(Animated.View)<DotProps>`
 
   border-radius: 5px;
 
-  background-color: ${props => props.theme.gray['500']};
+  background-color: ${props => props.theme['gray.500']};
 `;

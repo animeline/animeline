@@ -21,5 +21,5 @@ export const Description = styled.Text`
   font-size: 16px;
   font-family: 'Jost Regular';
 
-  color: ${props => props.theme.gray['500']};
+  color: ${props => props.theme['gray.500']};
 `;

@@ -89,7 +89,7 @@ export function TabRoutes() {
           fontFamily: 'Roboto Medium',
         },
         activeTintColor: theme.primary,
-        inactiveTintColor: theme.gray['500'],
+        inactiveTintColor: theme['gray.500'],
       }}>
       <Screen
         name="Home"

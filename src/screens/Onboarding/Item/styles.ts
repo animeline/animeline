@@ -12,7 +12,7 @@ export const Title = styled.Text`
 
   text-align: center;
 
-  color: ${props => props.theme.gray['500']};
+  color: ${props => props.theme['gray.500']};
 `;
 
 export const ImageContainer = styled.View`
@@ -27,5 +27,5 @@ export const Description = styled.Text`
 
   text-align: center;
 
-  color: ${props => props.theme.gray['500']};
+  color: ${props => props.theme['gray.500']};
 `;
