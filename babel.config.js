@@ -7,5 +7,12 @@ module.exports = {
         extensions: ['.svg'],
       },
     ],
+    [
+      'module:react-native-dotenv',
+      {
+        moduleName: '@env',
+        path: '.env',
+      },
+    ],
   ],
 };
