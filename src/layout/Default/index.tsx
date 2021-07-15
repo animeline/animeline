@@ -9,7 +9,11 @@ import {Container, Content} from './styles';
 
 interface DefaultProps {
   children: ReactNode;
-  showHeader?: boolean;
+  header?: {
+    type?: 'default' | 'back' | 'input';
+    bgColor?: ColorValue;
+    hidden?: boolean;
+  };
   statusBar?: StatusBarProps;
 }
 
