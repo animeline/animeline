@@ -26,7 +26,7 @@ export function Button({
       variant={variant}
       size={size}
       loading={loading}
-      disabled={loading ? true : false}
+      disabled={loading}
       {...rest}>
       <Text variant={variant}>
         {loading ? (
