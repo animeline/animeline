@@ -30,7 +30,11 @@ export function Default({
     <Container>
       <StatusBar {...statusBar} />
 
-      {showHeader && <Header />}
+      <Header
+        type={header.type}
+        bgColor={header.bgColor}
+        hidden={header.hidden}
+      />
 
       <Content>{children}</Content>
     </Container>
