@@ -8,7 +8,7 @@ import {Content} from './styles';
 
 export function Settings() {
   return (
-    <Default>
+    <Default header={{type: 'back'}}>
       <Content>
         <ServiceUnavailable />
       </Content>
