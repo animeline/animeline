@@ -1,6 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {View, Text, ActivityIndicator} from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  ActivityIndicator,
+  InteractionManager,
+} from 'react-native';
 import {useTheme} from 'styled-components';
 
 import {Default} from '@layout/Default';
@@ -13,6 +19,8 @@ export function Search() {
   const navigation = useNavigation();
 
   const theme = useTheme();
+
+  const inputRef = useRef<TextInput>(null);
 
   const [searchTextTimeout, setSearchTextTimeout] = useState<any>(null);
 
@@ -84,12 +92,19 @@ export function Search() {
     return () => clearTimeout(searchTextTimeout);
   }, [searchTextTimeout]);
 
+  useEffect(() => {
+    InteractionManager.runAfterInteractions(() => {
+      inputRef.current?.focus();
+    });
+  }, []);
+
   return (
     <Default header={{hidden: true}}>
       <Wrapper behavior={'height'}>
         <InputHeader
           theme={theme}
           status={status}
+          inputRef={inputRef}
           onInputChange={handleInputChange}
           onNavigateGoBack={handleNavigateGoBack}
         />
