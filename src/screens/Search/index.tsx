@@ -101,7 +101,7 @@ export function Search() {
 
           {loading && <ActivityIndicator size={50} color={theme.primary} />}
 
-          {!loading status === 'successs' && (
+          {status === 'successs' && (
             <View>
               <Text>{items.length} resultados para sua pesquisa.</Text>
             </View>
