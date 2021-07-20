@@ -1365,13 +1365,6 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@types/binary-file@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@types/binary-file/-/binary-file-0.2.0.tgz#9f3aea4a2de30f854545bec33b70e9684a6459c7"
-  integrity sha512-nzLAM4abxDMGDs3jWGfVUei0trGieyFwEFxN1joZCPafQGUrgAx5Yrc4Wa7Ia35OmSkd7lPL096QZSG4xy16sQ==
-  dependencies:
-    "@types/node" "*"
-
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
@@ -5923,15 +5916,10 @@ react-native-dotenv@^3.1.1:
   dependencies:
     dotenv "^10.0.0"
 
-react-native-file-access@^1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/react-native-file-access/-/react-native-file-access-1.7.1.tgz#ecddcfd1e95f05daa70b5484beec673fd99c5397"
-  integrity sha512-yJIH/7lSL+7oOgvRDcJtchIal9Vs15wk1aC3tyunt2w0DlBD3QnZWmbTNih6RPcZ6NjAqTB9ZCsKLRxIv9Y4ow==
-
-react-native-file-asset@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/react-native-file-asset/-/react-native-file-asset-0.1.2.tgz#ccd24f2c97b7c319eee61eeb289ac0d8656a254e"
-  integrity sha512-Wo3w0LH+cYx8JjENNVJOTQ4GUApvAVJZlPXmd+BCerEGnoHy69MwCJleBk9NHOaq4ES//55u80fFNJX+YU0Zcg==
+react-native-fast-image@^8.3.6:
+  version "8.3.6"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.6.tgz#b9f2d2e615919fd46ccbc9f8ad85d372196b0f0c"
+  integrity sha512-vjecBJXg9mCXGGfoUZ94SBEP1SYOkRN/w9SORH7D86PIQUVIqGbxW/Di3N79GI8Wsbay8qI7IWVHK7x26kIHbw==
 
 react-native-fs@^2.18.0:
   version "2.18.0"
